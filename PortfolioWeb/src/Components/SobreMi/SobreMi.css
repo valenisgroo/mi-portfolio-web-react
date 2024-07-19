@@ -1,0 +1,44 @@
+.sobremi{
+    padding: 70px 180px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d0e1f9;
+}
+
+.sobremi h4{
+    font-size: 25px;
+    font-weight: 300;
+    color: black;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.sobremi p{
+    padding: 25px;
+    line-height: 1.5;
+    color: rgba(0,0,0,0.6);
+}
+
+.cont-button{
+    padding-top: 30px;
+}
+
+.button-about {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 7px;
+    padding: 10px;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 12px;
+    transition: background-color 1s;
+}
+
+.button-about:hover{
+    background-color: #014a97;
+}
