@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
 
 import Header from './Components/Header/Header.jsx'
@@ -10,18 +9,29 @@ import SobreMi from './Components/SobreMi/SobreMi.jsx'
 import Experience from './Components/Experience/Experience.jsx'
 import Skills from './Components/Skills/Skills.jsx'
 import Projects from './Components/Projects/Projects.jsx'
+import Testimonials from './Components/Testimonials/Testimonials.jsx'
+import Contact from './Components/Contact/Contact.jsx'
 
+import {ChakraProvider} from '@chakra-ui/react'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Header />
-    <App />
-    <Header />
-    <Hero />
-    <SobreMi />
-    <Experience />
-    <Skills />
-    <Projects />
-    <Footer />
+
+    <ChakraProvider>
+      <header>
+        <Header />
+      </header>
+      <main>
+        <Hero />
+        <SobreMi />
+        <Experience />
+        <Skills />
+        <Projects />
+        <Testimonials />
+        <Contact />
+      </main>
+      <Footer />
+    </ChakraProvider>
+    
   </React.StrictMode>,
 )
