@@ -28,7 +28,7 @@ const Header = () => {
               <Link href="#about" sx={linkStyles}>Sobre Mí</Link>
             </Box>
             <Box as="li">
-              <Link href="#experience" sx={linkStyles}>Experiencia</Link>
+              <Link href="#experiencia" sx={linkStyles}>Experiencia</Link>
             </Box>
             <Box as="li">
               <Link href="#skills" sx={linkStyles}>Habilidades</Link>

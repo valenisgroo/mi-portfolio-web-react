@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Flex, Heading, Text, Link, Image, VStack, HStack } from '@chakra-ui/react';
+import { Box, Flex, Heading, Text, Link, Image, VStack, HStack, Icon } from '@chakra-ui/react';
+import { FaWhatsapp, FaInstagram, FaFacebook, FaTwitter, FaGithub } from 'react-icons/fa';
 
 const Hero = () => {
   return (
@@ -37,6 +38,23 @@ const Hero = () => {
           <Text><Box as="span" color="#007bff">6</Box> Meses de experiencia</Text>
           <Text><Box as="span" color="#007bff">10+</Box> Proyectos hechos</Text>
           <Text><Box as="span" color="#007bff">50+</Box> Clientes</Text>
+        </HStack>
+        <HStack spacing="10px" pt="20px">
+          <Link href="https://wa.me/2612453983" isExternal>
+            <Icon as={FaWhatsapp} boxSize="24px" color="#25D366" />
+          </Link>
+          <Link href="https://www.instagram.com/valenisgroo_/" isExternal>
+            <Icon as={FaInstagram} boxSize="24px" color="#E4405F" />
+          </Link>
+          <Link href="https://www.facebook.com/valentino.isgro" isExternal>
+            <Icon as={FaFacebook} boxSize="24px" color="#3b5998" />
+          </Link>
+          <Link href="https://x.com/Valentinoisgro" isExternal>
+            <Icon as={FaTwitter} boxSize="24px" color="#1DA1F2" />
+          </Link>
+          <Link href="https://github.com/valenisgroo" isExternal>
+            <Icon as={FaGithub} boxSize="24px" color="#333" />
+          </Link>
         </HStack>
       </VStack>
       <Image src="img/img1.jpeg" alt="Valentino Isgro" border="2px solid white" borderRadius="20px" w="250px" h="400px" boxShadow="0 0 20px rgba(0, 0, 0, 0.1)" />
