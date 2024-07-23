@@ -30,7 +30,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Testimonials />
         <Contact />
       </main>
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
+      
     </ChakraProvider>
     
   </React.StrictMode>,

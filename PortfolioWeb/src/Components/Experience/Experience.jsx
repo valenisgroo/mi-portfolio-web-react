@@ -1,6 +1,5 @@
 import React from 'react';
 import { Box, Text, Flex, Heading, useBreakpointValue } from "@chakra-ui/react";
-import Title from "../Title";
 
 const Experience = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
@@ -53,13 +52,13 @@ const Experience = () => {
       justifyContent="center"
       backgroundColor="#ffffff"
     >
-      <Title text='Experiencia Laboral'></Title>
+      <Heading as="h2" fontWeight="600" fontSize="30px" mb="40px">Experiencia Laboral</Heading>
       <Text
         p='10px'
         fontSize='14px'
         lineHeight='1.5'
         color='rgba(0,0,0,0.6)'
-        mb='40px'
+        mb='60px'
       >
         En ésta sección puedes ver mi experiencia laboral, destacando mis últimos trabajos.
       </Text>

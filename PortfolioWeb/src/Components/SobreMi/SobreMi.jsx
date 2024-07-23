@@ -15,10 +15,8 @@ const SobreMi = () => {
       backgroundColor="#d0e1f9"
     >
       <VStack spacing="6">
-        <Heading as="h2">
-          Sobre <Box as="span">Mi</Box>
-        </Heading>
-        <Heading as="h4" fontSize="25px" fontWeight="300" color="black" paddingTop="15px" paddingBottom="30px">
+        <Heading as="h2" fontWeight="600" fontSize="30px">Sobre Mi</Heading>
+        <Heading as="h4" fontSize="22px" fontWeight="300" color="black" paddingTop="15px" paddingBottom="30px">
           Programador Full Stack
         </Heading>
         <Text padding="25px" lineHeight="1.5" color="rgba(0,0,0,0.6)">
