@@ -23,7 +23,7 @@ const Header = () => {
           Valentino Isgro
         </Link>
         <Flex as="nav" justify="center" align="center">
-          <Flex as="ul" listStyleType="none" padding="0" margin="0" gap="15px" display={{ base: 'none', md: 'flex' }}>
+          <Flex as="ul" listStyleType="none" padding="0" margin="0" gap="10px" display={{ base: 'none', md: 'flex' }}>
             <Box as="li">
               <Link href="#inicio" sx={linkStyles}>Inicio</Link>
             </Box>
@@ -46,7 +46,6 @@ const Header = () => {
               <Link href="#contact" sx={linkStyles}>Contacto</Link>
             </Box>
           </Flex>
-          {/* Menú burger bar */}
           <Button
             display={{ base: 'block', md: 'none' }}
             onClick={onOpen}

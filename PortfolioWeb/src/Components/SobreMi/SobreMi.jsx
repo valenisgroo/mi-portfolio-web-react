@@ -37,14 +37,32 @@ const SobreMi = () => {
             fontWeight="bold"
             borderRadius="7px"
             padding="10px"
-            border="1px solid #007bff"
+            border="1px solid"
             backgroundColor="#007bff"
             color="#ffffff"
             fontSize="12px"
             transition="background-color 1s"
             _hover={{ backgroundColor: '#014a97' }}
+            marginRight="10px"
           >
             Descargar CV
+          </Link>
+          <Link
+            href='img/logo.jpeg'
+            textDecoration="none"
+            textTransform="uppercase"
+            fontWeight="bold"
+            borderRadius="7px"
+            padding="10px"
+            border="1px solid"
+            backgroundColor="#007bff"
+            color="#ffffff"
+            fontSize="12px"
+            transition="background-color 1s"
+            _hover={{ backgroundColor: '#014a97' }}
+            marginLeft="10px"
+          >
+            Ver logo
           </Link>
         </Box>
       </VStack>

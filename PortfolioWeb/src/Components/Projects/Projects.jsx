@@ -68,6 +68,7 @@ const Projects = () => {
                   boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)"
                   mb={{ base: '20px', md: '0' }}
                   cursor="pointer"
+                  ml="250px"
                 />
               </a>
             </Box>

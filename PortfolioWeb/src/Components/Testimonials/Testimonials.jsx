@@ -52,7 +52,7 @@ const Testimonials = () => {
 
   return (
     <Box as="section" id="testimonial" width="100%" bg="#d0e1f9" textAlign="center" py="70px">
-      <Heading as="h3" fontSize="20px" mb="10px">Testimonios</Heading>
+      <Heading as="h3" fontSize="20px" mb="15px" mt="10px">Testimonios</Heading>
       <Heading as="h2" fontWeight="600" fontSize="30px" mb="40px">Clientes Felices</Heading>
 
       <Box width={{ base: '90%', md: '80%' }} mx="auto">
