@@ -51,44 +51,58 @@ const Testimonials = () => {
   };
 
   return (
-    <Box as="section" id="testimonial" width="100%" bg="#d0e1f9" textAlign="center" py="70px">
-      <Heading as="h3" fontSize="20px" mb="15px" mt="10px">Testimonios</Heading>
-      <Heading as="h2" fontWeight="600" fontSize="30px" mb="40px">Clientes Felices</Heading>
+    <Box as="section" id="testimonial" width="100%" bg="#ccdcf5" textAlign="center" py={{ base: '40px', md: '70px' }}>
+
+      <Heading as="h3" fontSize={{ base: '18px', md: '20px' }} mb={{ base: '10px', md: '15px' }} mt="10px">
+        Testimonios
+      </Heading>
+
+      <Heading as="h2" fontWeight="600" fontSize={{ base: '24px', md: '30px' }} mb={{ base: '30px', md: '40px' }}>
+        Clientes Felices
+      </Heading>
 
       <Box width={{ base: '90%', md: '80%' }} mx="auto">
+        
         <Slider {...settings}>
           {testimonials.map((testimonial, index) => (
-            <Box key={index} p="20px">
+            <Box key={index} p={{ base: '10px', md: '20px' }}>
+
               <Flex
                 borderRadius="10px"
-                p="20px"
+                p={{ base: '15px', md: '20px' }}
                 bg="#ffffff"
                 boxShadow="0 4px 8px rgba(0,0,0,0.1)"
                 textAlign="left"
                 align="flex-start"
-                gap="20px"
+                gap={{ base: '15px', md: '20px' }}
                 position="relative"
                 height="100%"
               >
+
                 <Image
                   src={testimonial.image}
                   alt={testimonial.name}
-                  width="60px"
-                  height="60px"
+                  width={{ base: '50px', md: '60px' }}
+                  height={{ base: '50px', md: '60px' }}
                   borderRadius="50%"
                   border="solid 1px #007bff"
                   position="absolute"
-                  top="20px"
-                  left="20px"
+                  top={{ base: '15px', md: '20px' }}
+                  left={{ base: '15px', md: '20px' }}
                 />
-                <Box pl="90px">
-                  <Heading as="h5" fontSize="18px" fontWeight="bold" m="0">
+
+                <Box pl={{ base: '70px', md: '90px' }}>
+                  
+                  <Heading as="h5" fontSize={{ base: '16px', md: '18px' }} fontWeight="bold" m="0">
                     {testimonial.name}
                   </Heading>
-                  <Text as="h6" fontSize="16px" color="#888" display="block" mb="15px">
+
+                  <Text as="h6" fontSize={{ base: '14px', md: '16px' }} color="#888" display="block" mb="15px">
                     {testimonial.title}
                   </Text>
+
                   <Text m="0">{testimonial.description}</Text>
+
                 </Box>
               </Flex>
             </Box>

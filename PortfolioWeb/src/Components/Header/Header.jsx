@@ -1,29 +1,31 @@
 import React from 'react';
 import { Box, Flex, Link, Icon, Drawer, DrawerBody, DrawerFooter, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, Button, VStack, HStack } from '@chakra-ui/react';
-import { FaBars, FaWhatsapp, FaInstagram, FaFacebook, FaLinkedin, FaGithub } from 'react-icons/fa'; // Importar FaBars para el icono de menú
+import { FaBars, FaWhatsapp, FaInstagram, FaFacebook, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Header = () => {
+  
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const linkStyles = {
     fontWeight: '500',
-    fontSize: '16px',
-    padding: '10px 15px',
+    fontSize: { base: '14px', md: '16px' },
+    padding: { base: '8px 10px', md: '10px 15px' }, 
     textDecoration: 'none',
-    transition: 'color 1s, background-color 0.3s ease',
-    fontFamily: 'sans-serif',
+    transition: 'color 0.3s, background-color 0.3s ease',
+    fontFamily: 'Helvetica',
     color: 'black',
     _hover: { color: '#007bff' },
   };
 
   return (
-    <Box as="header" bg="#f0f0f0" color="black" padding="10px 0" position="fixed" width="100%" zIndex="99">
-      <Flex justify="space-between" align="center" padding="0 10%">
-        <Link href="#" fontSize="23px" fontWeight="600" color="black" _hover={{ textDecoration: 'none' }}>
+    <Box as="header" bg="#F8F9FB" color="black" padding="15px 0" position="fixed" width="100%" zIndex="99">
+      <Flex justify="space-between" align="center" padding={{ base: '0 5%', md: '0 10%' }}>
+        <Link href="#" fontSize="20px" fontWeight="600" color="black" _hover={{ textDecoration: 'none' }}>
           Valentino Isgro
         </Link>
+
         <Flex as="nav" justify="center" align="center">
-          <Flex as="ul" listStyleType="none" padding="0" margin="0" gap="10px" display={{ base: 'none', md: 'flex' }}>
+          <Flex as="ul" listStyleType="none" padding="0" margin="0" gap="10px" display={{ base: 'none', lg: 'flex' }}>
             <Box as="li">
               <Link href="#inicio" sx={linkStyles}>Inicio</Link>
             </Box>
@@ -47,7 +49,7 @@ const Header = () => {
             </Box>
           </Flex>
           <Button
-            display={{ base: 'block', md: 'none' }}
+            display={{ base: 'block', lg: 'none' }}
             onClick={onOpen}
             bg="transparent"
             border="none"
@@ -60,9 +62,13 @@ const Header = () => {
         </Flex>
       </Flex>
 
-      <Drawer isOpen={isOpen} onClose={onClose}>
+      <Drawer isOpen={isOpen} onClose={onClose} placement="right">
         <DrawerOverlay />
-        <DrawerContent bg="#f0f0f0" color="black">
+        <DrawerContent
+          bg="#f0f0f0"
+          color="black"
+          transition="transform 0.3s ease"
+        >
           <DrawerCloseButton color="black" />
           <DrawerHeader>Menú</DrawerHeader>
           <DrawerBody>

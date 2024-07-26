@@ -43,45 +43,41 @@ const Experience = () => {
   };
 
   return (
-    <Flex
-      id="experiencia"
-      p={{ base: '60px 50px', md: '60px 120px' }}
-      textAlign="center"
-      flexDirection="column"
-      alignItems="center"
-      justifyContent="center"
-      backgroundColor="#ffffff"
-    >
-      <Heading as="h2" fontWeight="600" fontSize="30px" mb="40px">Experiencia Laboral</Heading>
-      <Text
-        p='10px'
-        fontSize='14px'
-        lineHeight='1.5'
-        color='rgba(0,0,0,0.6)'
-        mb='60px'
-      >
-        En ésta sección puedes ver mi experiencia laboral, destacando mis últimos trabajos.
+    <Flex id="experiencia" p={{ base: '60px 50px', md: '60px 120px' }} textAlign="center" flexDirection="column" alignItems="center" justifyContent="center" backgroundColor="#ffffff">
+      
+      <Heading as="h2" fontWeight="600" fontSize="30px" mb="40px">
+        Experiencia Laboral
+      </Heading>
+      
+      <Text p='10px'fontSize='14px' lineHeight='1.5' color='rgba(0,0,0,0.6)' mb='60px'>
+        En esta sección puedes ver mi experiencia laboral, destacando mis últimos trabajos.
       </Text>
+
       <Flex sx={containerStyles}>
+
         <Box sx={boxStyles}>
           <Text sx={textStyles}>Año 0000- Mes 0000- Día 0000</Text>
           <Heading as='h3' sx={h3Styles}>Puesto de trabajo</Heading>
           <Heading as='h4' sx={h4Styles}>Nombre empresa</Heading>
-          <Text sx={textStyles}>Descripción de las tareas realizadas y el puesto cubierto en éste trabajo.</Text>
+          <Text sx={textStyles}>Descripción de las tareas realizadas y el puesto cubierto en este trabajo.</Text>
         </Box>
+
         <Box sx={boxStyles}>
           <Text sx={textStyles}>Año 0000- Mes 0000- Día 0000</Text>
           <Heading as='h3' sx={h3Styles}>Puesto de trabajo</Heading>
           <Heading as='h4' sx={h4Styles}>Nombre empresa</Heading>
-          <Text sx={textStyles}>Descripción de las tareas realizadas y el puesto cubierto en éste trabajo.</Text>
+          <Text sx={textStyles}>Descripción de las tareas realizadas y el puesto cubierto en este trabajo.</Text>
         </Box>
+
         <Box sx={boxStyles}>
           <Text sx={textStyles}>Año 0000- Mes 0000- Día 0000</Text>
           <Heading as='h3' sx={h3Styles}>Puesto de trabajo</Heading>
           <Heading as='h4' sx={h4Styles}>Nombre empresa</Heading>
-          <Text sx={textStyles}>Descripción de las tareas realizadas y el puesto cubierto en éste trabajo.</Text>
+          <Text sx={textStyles}>Descripción de las tareas realizadas y el puesto cubierto en este trabajo.</Text>
         </Box>
+
       </Flex>
+
     </Flex>
   );
 };
