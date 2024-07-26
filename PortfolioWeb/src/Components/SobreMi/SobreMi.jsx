@@ -18,7 +18,7 @@ const SobreMi = () => {
     >
       <VStack spacing="6">
         
-        <Heading as="h2" fontWeight="600" fontSize="30px">
+        <Heading as="h2" fontWeight="600" fontSize="30px" pt="50px">
           Sobre Mi
         </Heading>
         

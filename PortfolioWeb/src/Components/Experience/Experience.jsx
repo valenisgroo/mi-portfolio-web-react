@@ -44,8 +44,8 @@ const Experience = () => {
 
   return (
     <Flex id="experiencia" p={{ base: '60px 50px', md: '60px 120px' }} textAlign="center" flexDirection="column" alignItems="center" justifyContent="center" backgroundColor="#ffffff">
-      
-      <Heading as="h2" fontWeight="600" fontSize="30px" mb="40px">
+
+      <Heading as="h2" fontWeight="600" fontSize="30px" mb="40px" pt="10px">
         Experiencia Laboral
       </Heading>
       

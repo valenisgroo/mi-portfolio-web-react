@@ -23,7 +23,7 @@ const Contact = () => {
         as="h2"
         fontWeight="600"
         fontSize={{ base: '24px', md: '30px' }}
-        mb={{ base: '4px', md: '6px' }}
+        mb={{ base: '4px', md: '6px' }} pt="20px"
       >
         Interesados que deseen
       </Heading>

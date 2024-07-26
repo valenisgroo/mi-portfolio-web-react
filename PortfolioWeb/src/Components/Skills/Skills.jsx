@@ -14,7 +14,7 @@ const Skills = () => {
          
          <Box id="skills" w="100%" bg="#ccdcf5" textAlign="center" p={{ base: '70px 20px', md: '70px 180px' }}>
 
-            <Heading as="h2" fontWeight="600" fontSize={{ base: '24px', md: '30px' }} mb="20px">
+            <Heading as="h2" fontWeight="600" fontSize={{ base: '24px', md: '30px' }} mb="20px" pt="10px">
                 Soy experto en
             </Heading>
             

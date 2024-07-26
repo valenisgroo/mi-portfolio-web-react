@@ -23,12 +23,6 @@ const testimonials = [
     image: 'img/cliente3.jpg',
     description: 'Nos motiva la satisfacción de nuestros clientes. Confía en nosotros y comparte nuestro crecimiento. La gestión de activos está compuesta por un equipo de expertos, comprometidos y experimentados, con una pasión por los mercados financieros. Nuestro objetivo es lograrlo continuamente.'
   },
-  {
-    name: 'Carlos Méndez',
-    title: 'Marketing Specialist',
-    image: 'img/cliente4.jpg',
-    description: 'Nos motiva la satisfacción de nuestros clientes. Confía en nosotros y comparte nuestro crecimiento. La gestión de activos está compuesta por un equipo de expertos, comprometidos y experimentados, con una pasión por los mercados financieros. Nuestro objetivo es lograrlo continuamente.'
-  }
 ];
 
 const Testimonials = () => {
@@ -53,7 +47,7 @@ const Testimonials = () => {
   return (
     <Box as="section" id="testimonial" width="100%" bg="#ccdcf5" textAlign="center" py={{ base: '40px', md: '70px' }}>
 
-      <Heading as="h3" fontSize={{ base: '18px', md: '20px' }} mb={{ base: '10px', md: '15px' }} mt="10px">
+      <Heading as="h3" fontSize={{ base: '18px', md: '20px' }} mb={{ base: '10px', md: '15px' }} mt="10px" pt="30px">
         Testimonios
       </Heading>
 
@@ -62,7 +56,7 @@ const Testimonials = () => {
       </Heading>
 
       <Box width={{ base: '90%', md: '80%' }} mx="auto">
-        
+
         <Slider {...settings}>
           {testimonials.map((testimonial, index) => (
             <Box key={index} p={{ base: '10px', md: '20px' }}>

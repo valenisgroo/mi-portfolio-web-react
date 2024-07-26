@@ -24,7 +24,7 @@ const Projects = () => {
   return (
     <Box as="section" id="project" bg="white" textAlign="center" p={{ base: '40px 20px', md: '70px 40px' }}>
       
-      <Heading as="h2" fontWeight="600" fontSize={{ base: '24px', md: '30px' }} mb={{ base: '40px', md: '70px' }}>
+      <Heading as="h2" fontWeight="600" fontSize={{ base: '24px', md: '30px' }} mb={{ base: '40px', md: '70px' }} pt="30px">
         Mis últimos proyectos
       </Heading>
         
