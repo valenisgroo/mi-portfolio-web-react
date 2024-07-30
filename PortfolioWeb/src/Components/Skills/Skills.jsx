@@ -4,10 +4,10 @@ import { FaHtml5, FaCss3, FaJsSquare, FaDatabase } from 'react-icons/fa';
 
 const Skills = () => {
     const skillItems = [
-        { percentage: '95%', label: 'HTML5', icon: <FaHtml5 size="50px" color="#E34F26" /> },
-        { percentage: '95%', label: 'CSS3', icon: <FaCss3 size="50px" color="#1572B6" /> },
-        { percentage: '95%', label: 'JavaScript', icon: <FaJsSquare size="50px" color="#F7DF1E" /> },
-        { percentage: '95%', label: 'SQL', icon: <FaDatabase size="50px" color="#003B57" /> }
+        { percentage: '95%', label: 'HTML5', icon: <FaHtml5 size="50px" color="black" /> },
+        { percentage: '95%', label: 'CSS3', icon: <FaCss3 size="50px" color="black" /> },
+        { percentage: '95%', label: 'JavaScript', icon: <FaJsSquare size="50px" color="black" /> },
+        { percentage: '95%', label: 'SQL', icon: <FaDatabase size="50px" color="black" /> }
     ];
 
     return (
