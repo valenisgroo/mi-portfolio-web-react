@@ -21,9 +21,10 @@ Se hicieron nuevos ajustes en este Portfolio con respecto al anterior:
 Gracias a la herramienta CollorZilla que es una extensión de Google se pudo obtener los colores del proyecto original.
 
 **COLORES**
-Gris claro: #F8F9FB
-Blanco: #FFFFFF
-Celeste claro: #CCDCF5
+
+- Gris claro: #F8F9FB
+- Blanco: #FFFFFF
+- Celeste claro: #CCDCF5
 
 Les dejo nuevamente el link al nuevo y mejorado Portfolio Web, la cual fue deployado con Vercel.
 
