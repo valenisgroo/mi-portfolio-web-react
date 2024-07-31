@@ -3,13 +3,13 @@ import { Box, Flex, Link, Icon, Drawer, DrawerBody, DrawerFooter, DrawerHeader, 
 import { FaBars, FaWhatsapp, FaInstagram, FaFacebook, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Header = () => {
-  
+
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const linkStyles = {
     fontWeight: '500',
-    fontSize: { base: '14px', md: '16px' },
-    padding: { base: '8px 10px', md: '10px 15px' }, 
+    fontSize: { base: '14px', lg: '14px', xl: '16px' },
+    padding: { base: '8px 5px', lg: '8px 8px', xl: '10px 15px' },
     textDecoration: 'none',
     transition: 'color 0.3s, background-color 0.3s ease',
     fontFamily: 'Helvetica',
@@ -18,14 +18,14 @@ const Header = () => {
   };
 
   return (
-    <Box as="header" bg="#F8F9FB" color="black" padding="15px 0" position="fixed" width="100%" zIndex="99">
-      <Flex justify="space-between" align="center" padding={{ base: '0 5%', md: '0 10%' }}>
-        <Link href="#" fontSize="20px" fontWeight="600" color="black" _hover={{ textDecoration: 'none' }}>
+    <Box as="header" bg="#F8F9FB" color="black" padding="10px 0" position="fixed" width="100%" zIndex="99">
+      <Flex justify="space-between" align="center" padding={{ base: '0 5%', lg: '0 5%', xl: '0 10%' }}>
+        <Link href="#" fontSize={{ base: '18px', lg: '18px', xl: '20px' }} fontWeight="600" color="black" _hover={{ textDecoration: 'none' }}>
           Valentino Isgro
         </Link>
 
         <Flex as="nav" justify="center" align="center">
-          <Flex as="ul" listStyleType="none" padding="0" margin="0" gap="10px" display={{ base: 'none', lg: 'flex' }}>
+          <Flex as="ul" listStyleType="none" padding="0" margin="0" gap={{ base: '5px', lg: '5px', xl: '10px' }} display={{ base: 'none', lg: 'flex' }}>
             <Box as="li">
               <Link href="#inicio" sx={linkStyles}>Inicio</Link>
             </Box>
@@ -64,11 +64,7 @@ const Header = () => {
 
       <Drawer isOpen={isOpen} onClose={onClose} placement="right">
         <DrawerOverlay />
-        <DrawerContent
-          bg="#f0f0f0"
-          color="black"
-          transition="transform 0.3s ease"
-        >
+        <DrawerContent bg="#f0f0f0" color="black" transition="transform 0.3s ease">
           <DrawerCloseButton color="black" />
           <DrawerHeader>Menú</DrawerHeader>
           <DrawerBody>
